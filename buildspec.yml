@@ -1,0 +1,17 @@
+﻿version: 2.0
+phases:
+	pre-build:
+		commands:
+			- echo Restore started on `date`
+			- dotnet restore WebAppCodepipline.csproj
+	build:
+		commands:
+			- echo Build started on `date`
+			- dotnet publish -c release -o ./build_output WebAppCodepipline.csproj
+	post-build:
+		commands:
+			- echo "Deployed to s3"
+artifacts:
+	files:
+		- '**/*'
+		- ./build_output
