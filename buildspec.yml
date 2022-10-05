@@ -8,6 +8,8 @@ phases:
     commands:
       - echo Build started on `date`
       - dotnet publish -c release -o ./build_output WebAppCodepipline.csproj
+      - grep -Fq "Oliver" index.html
+      - grep -Fq "Levi" index.html
   post_build:
     commands:
       - echo "Deployed to s3"

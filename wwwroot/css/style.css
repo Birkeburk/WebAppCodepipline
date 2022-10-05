@@ -1,0 +1,18 @@
+﻿body {
+    background-color: black;
+    justify-content:center;
+    display:flex;
+}
+img {
+    height: 200px;
+    width: 200px;
+}
+div {
+    margin-top:10%;
+    background-color:white;
+    padding:10px;
+
+}
+div.Oliver {
+    margin-right:50px;
+}

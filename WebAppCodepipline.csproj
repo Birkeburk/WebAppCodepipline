@@ -17,4 +17,8 @@
     <Content Include="index.html" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\Bakgrund.jpg" />
+  </ItemGroup>
+
 </Project>
